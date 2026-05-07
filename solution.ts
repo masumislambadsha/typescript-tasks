@@ -33,7 +33,7 @@ interface Book {
   publishedYear: number;
 }
 
-const toggleFunction = (book: Book): object => {
+const toggleReadStatus  = (book: Book): object => {
   return {
     ...book,
     isRead: true,
