@@ -14,12 +14,9 @@ type StringOrNumber = string | number;
 const checkType = (input: StringOrNumber): string => {
   if (typeof input === "string") {
     return "String";
-  } else if (typeof input === "number") {
-    return "Number";
-  } else {
-    return "undefined";
   }
-};
+  return "Number";
+}
 
 //? 4
 const getProperty = <T, K extends keyof T>(obj: T, key: K): T[K] => {
